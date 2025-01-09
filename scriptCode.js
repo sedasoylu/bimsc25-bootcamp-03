@@ -1,8 +1,5 @@
-const breakfastDiv = document.getElementById("breakfast")
-breakfastDiv.addEventListener('click', () => breakfastClicked())
 
-const LunchDiv = document.getElementById("lunch")
-LunchDiv.addEventListener('click', () => lunchClicked())
+
 
 function breakfastClicked(){
     const breakfastDiv = document.getElementById("breakfastfoods")
@@ -11,9 +8,15 @@ function breakfastClicked(){
     lunchDiv.style.display = 'none'
 }
 
+const breakfastDiv = document.getElementById("breakfast")
+breakfastDiv.addEventListener('click', () => breakfastClicked())
+
+
 function lunchClicked(){
     const breakfastDiv = Document.getElementById("breakfastFoods")
     breakfastDiv.style.display = 'none'
     const lunchDiv = document.getElementById("lunchFoods")
     lunchDiv.style.display = 'flex'
 }
+const LunchDiv = document.getElementById("lunch")
+LunchDiv.addEventListener('click', () => lunchClicked())
